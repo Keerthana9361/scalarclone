@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Navbar Links */
+.nav-link {
+    padding: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.nav-link.active {
+    color: #007bff;
+}
+
+/* Help Bar */
+.help {
+    background-color: #6c3082;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.help a {
+    color: #ffecb3;
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-image: url("https://assets-v2.scaler.com/assets/academy/svg/banner-background-34136d3a9ddff172e6bae6e3d8283c452231dcda2196b055bfa2e34e222754b7.svg");
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    padding: 0px 50px;
+    gap: 20px;
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20%;
+}
+
+.left p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.left .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.left .buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.left .buttons .book {
+    background-color: #ff3333;
+    color: white;
+    flex: 1;
+}
+
+.left .buttons .explore {
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+    flex: 1;
+}
+
+.left .note {
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.note {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ffecb3;
+}
+
+.booking-form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.booking-form h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.booking-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ff3d55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.booking-form .form-check-label {
+    margin-left: 10px;
+}
+
+.booking-form .form-check-input {
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #dc3545;
+}
+
+.dot:hover {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.terms-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.terms-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-text a:hover {
+    text-decoration: underline;
+}
+
+input[type="tel"] {
+    width: 70%;
+}
+
+.input-group-text img {
+    margin-right: 5px;
+}
+
+.input-group-text {
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+}
+
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #adb5bd;
+}
+
+.form-select,
+.form-control {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.form-check-label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: 700px;
+    left: 250px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+
+    #c1 {
+        font-size: 30px;
+
+        b {
+            font-weight: bold;
+        }
+    }
+
+    #c2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 40px;
+
+        .card {
+            text-align: center;
+            align-items: center;
+            padding: 40px;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                height: 50px;
+                width: 70px;
+            }
+
+            .card-body {
+                height: 100%;
+                width: 100%;
+
+                .card-text {
+                    font-size: 20px;
+                    color: white;
+                }
+
+                #line1 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: rgba(255, 166, 0, 0.76);
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+
+                #line2 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: violet;
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+
+                #line3 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: lightseagreen;
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+
+                #line4 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: yellow;
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+
+                #line5 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: skyblue;
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+
+                #line6 {
+                    height: 30px;
+                    width: 150px;
+                    background-color: orange;
+                    rotate: 45deg;
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                }
+            }
+        }
+    }
+}
