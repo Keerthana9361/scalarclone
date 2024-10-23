@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 a {
@@ -63,6 +63,7 @@ a:hover {
     align-items: center;
     padding: 40px;
     background-image: url("https://assets-v2.scaler.com/assets/academy/svg/banner-background-34136d3a9ddff172e6bae6e3d8283c452231dcda2196b055bfa2e34e222754b7.svg");
+    padding-bottom: 210px;
 }
 
 .left {
@@ -71,18 +72,18 @@ a:hover {
     justify-content: center;
     align-items: start;
     color: white;
-    padding: 0px 50px;
+    padding: 0px 20px;
     gap: 20px;
-    width: 50%;
+    margin-left: 160px;
 }
 
 .left h1 {
-    font-size: 2.5em;
-    margin-bottom: 20%;
+    font-size: 30px;
+
 }
 
 .left p {
-    font-size: 1.2em;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -101,14 +102,14 @@ a:hover {
 .left .buttons .book {
     background-color: #ff3333;
     color: white;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .left .buttons .explore {
     background-color: white;
     color: #003366;
     border: 2px solid #003366;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .left .note {
@@ -117,7 +118,7 @@ a:hover {
 }
 
 .buttons .btn {
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-right: 10px;
 }
 
@@ -133,6 +134,8 @@ a:hover {
     padding: 20px;
     max-height: 500px;
     overflow-y: auto;
+    margin-right: -120px;
+    margin-left: 80px;
 }
 
 .booking-form h2 {
@@ -253,12 +256,15 @@ input[type="email"]::placeholder {
     justify-content: center;
     align-items: center;
     padding: 40px 40px;
+    margin-left: -60px;
     border-radius: 5px;
     position: absolute;
     top: 700px;
     left: 250px;
+    gap: 30px;
     background-color: white;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0px 0px 25px lightgrey;
+
 
     #c1 {
         font-size: 30px;
@@ -274,20 +280,20 @@ input[type="email"]::placeholder {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding: 20px 40px;
+        /* padding: 20px 40px; */
 
         .card {
             text-align: center;
             align-items: center;
-            padding: 40px;
-            height: 100%;
-            width: 100%;
+            padding: 20px;
+            height: 220px;
+            width: 340px;
             position: relative;
             overflow: hidden;
 
             img {
-                height: 50px;
-                width: 70px;
+                height: 70px;
+                width: 90px;
             }
 
             .card-body {
@@ -295,14 +301,14 @@ input[type="email"]::placeholder {
                 width: 100%;
 
                 .card-text {
-                    font-size: 20px;
+                    font-size: 22px;
                     color: white;
                 }
 
                 #line1 {
                     height: 30px;
                     width: 150px;
-                    background-color: rgba(255, 166, 0, 0.76);
+                    background-color: gold;
                     rotate: 45deg;
                     position: absolute;
                     top: 0px;
@@ -358,6 +364,65 @@ input[type="email"]::placeholder {
                     top: 0px;
                     right: -35px;
                 }
+            }
+        }
+    }
+}
+
+
+#flexible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 200px;
+    margin-top: 400px;
+
+    #flexiblehead {
+        font-size: 30px;
+
+        b {
+            border-bottom: 2px rgb(22, 153, 205) solid;
+        }
+    }
+
+    #flexiblesub {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        #card1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px rgba(128, 128, 128, 0.736) solid;
+            border-radius: 10px;
+            gap: 10px;
+            
+
+            img {
+                height: 90px;
+                width: 90px;
+            }
+
+            #img1 {
+                height: 70px;
+            }
+
+            #cardhead {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            #cardsub {
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.668);
+                width: 300px;
+                text-align: center;
             }
         }
     }
